@@ -8,8 +8,13 @@ print("CONSTRAINTS - 1 <= N <= 100")
 print("OUTPUT FORMAT - Print Weird if the number is weird. Otherwise, print Not Weird.")
 
 
-
-n = int(input())
+while True:
+    n = int(input())
+    if 1 <= n <= 100:
+        break
+    else:
+        print("Invalid input. Please enter a number between 1 to 100")
+        
 if n % 2 != 0:
     print("Weird")
 elif n % 2 == 0 and 6 <= n <= 20:
